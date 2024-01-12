@@ -31,6 +31,7 @@ header .navbar{
     justify-content: space-between;
 }
 .navbar .logo{
+    color: #fff;
     font-size: 2.1rem;
     font-weight: 600;
 }
@@ -77,6 +78,48 @@ header .navbar{
     outline: none;
     border: none;
     font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
     padding: 12px 30px;
-    
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
+.hero-section .content button:hover {
+    color:#fff;
+    background: #C06B3E;
+
+}
+#menu-btn{
+    color:#fff;
+    cursor: pointer;
+    display: none;
+
+
+}
+#close-menu-btn{
+    display: none;
+    position: absolute;
+    right:20px;
+    color:#fff;
+    cursor: pointer;
+}
+@media screen and (max-width: 850px) {
+    #close-menu-btn, #menu-btn{
+        display: block;
+    }
+    .navbar .menu-links {
+        position: fixed;
+        left: -260px;
+        top:0;
+        flex-direction: column;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        padding: 70px 40px 0;
+    }
+    .navbar a {
+        color:#000;
+    }
+} 
+    
